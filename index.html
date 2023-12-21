@@ -10,6 +10,7 @@
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -35,12 +36,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#testmonial">Testmonial</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -366,6 +367,15 @@
     </section>
     <!-- End of portfolio section -->
 
+    <section id="testmonial" class="section">
+        <div class="container text-center">
+
+            <canvas class="pieChart" id="leetPieChart" width="20" height="20"></canvas>
+            <canvas class="barChart" id="githubBarChart" width="20" height="20"></canvas>
+
+        </div>
+    </section>
+
     <!-- Testmonial Section
     <section id="testmonial" class="section">
         <div class="container text-center">
@@ -549,8 +559,9 @@
     <!-- bootstrap 3 affix -->
 	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <!-- steller js -->
+    <!-- additional js -->
     <script src="assets/js/steller.js"></script>
+    <script src="assets/js/charts.js"></script>
 
 </body>
 </html>
