@@ -23,12 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const leetcodeElement = document.getElementById("leetcode-qsns");
 	const githubElement = document.getElementById("github-repos");
 	const codechefElement = document.getElementById("codechef-stars");
-
-	const github_username = 'dayitachaudhuri';
-	const token = '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';
-
-	const codeforces_handle = 'dayita_c';
-
 	  
 	fetch('https://leetcode-api-faisalshohag.vercel.app/user9015Y')
 	  .then(response => {
@@ -46,10 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		leetcodeElement.innerHTML = `<p>Error fetching data: ${error.message}</p>`;
 	  });
 
-	fetch(`https://api.github.com/users/${github_username}`, {
-	headers: {
-		Authorization: `token ${token}`,
-	},
+	fetch(`https://api.github.com/users/dayitachaudhuri`, {
 	})
 	.then(response => {
 		if (!response.ok) {
@@ -66,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		githubElement.innerHTML = `<p>Error fetching data: ${error.message}</p>`;
 	});
 
-	fetch(`https://codeforces.com/api/user.info?handles=${codeforces_handle}`)
+	fetch(`https://codeforces.com/api/user.info?handles=dayita_c`)
 	.then(response => {
 		if (!response.ok) {
 		throw new Error('Network response was not ok');
