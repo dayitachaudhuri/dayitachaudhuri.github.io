@@ -6,3 +6,82 @@
 .pieChart{
     max-height: 300px;
 }
+
+.certifications-container {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certifications-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.certifications-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.certifications-list li {
+    margin-bottom: 8px;
+}
+
+.certification-name {
+    font-weight: 500;
+}
+
+.certification-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 5%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    align-content: center;
+}
+
+/* Sections */
+.coursework-section, .certifications-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Headings */
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Certifications Specific Styling */
+.certifications-list .certification-name {
+    font-weight: 500;
+}
+
+.certifications-list .certification-date {
+    font-size: 14px;
+    color: #666;
+}
