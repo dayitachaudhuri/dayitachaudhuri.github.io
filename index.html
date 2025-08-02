@@ -14,6 +14,14 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <button id="darkModeBtn" class="dark-mode-btn" aria-label="Toggle dark mode">
+            <span class="toggle-label light">Light</span>
+            <span class="toggle-label dark">Dark</span>
+        </button>
+    </div>
+
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
@@ -31,7 +39,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Experience</a>
+                        <a class="nav-link" href="#research">Research Experience</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Professional Experience</a>
                     </li>                   
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -66,11 +77,11 @@
         </div>  
 
         <!-- Header-widget -->
-        <div class="widget">
+        <!-- <div class="widget">
             <div class="widget-item" id="leetcode-qsns"></div>
             <div class="widget-item" id="github-repos"></div>
             <div class="widget-item" id="codechef-stars"></div>
-        </div>
+        </div> -->
     </header>
     <!-- End of Page Header -->
     
@@ -84,23 +95,22 @@
                 <div class="pl-md-4 col-md-9">
                     <!-- <h6 class="title">Dayita Chaudhuri</h6> -->
                     <p class="subtitle">Hi there! Welcome to my page!</p>
-                    <p>
+                    <p class = 'small'>
 
                         I am currently pursuing M.Tech. in Computation and Data Science at IISc Banglore. 
                         I completed my graduation in Computer Science and Engineering from NIT Agartala with an 9.43 CGPA. 
-                        I have 8 months of experience in software development and have worked with some of the top tech companies 
-                        including Amazon and Google.
+                        I have 8+ months of experience in software development and have worked with some of the top tech companies of the industry.
                     </p>
-                    <p>
+                    <p class = 'small'>
                         I am a highly dedicated and results-oriented individual with strong work ethics and a passion for learning and innovation.
                         I am interested in the field of Natural Language Processing, Deep Learning and Data Science.
                         My ultimate goal is to utilise my experience and skillset to make a positive impact in the world of technology. 
                         I am open to collaborations and all kinds of research opportunities. 
                     </p>
-                    <p>
+                    <p class = 'small'>
                         If you feel that you have something mutually beneficial for us, 
                         please ping me through any of my socials or drop me a mail at 
-                        <a href="mailto:dayitachaudhuri.tech@gmail.com">dayitachaudhuri.tech@gmail.com</a>.
+                        <a href="mailto:dayitac@iisc.ac.in">dayitac@iisc.ac.in</a> or <a href="mailto:dayitachaudhuri.tech@gmail.com">dayitachaudhuri.tech@gmail.com</a>.
                     </p>
                     <div class="buttons pt-3">
                         <!-- <a href="#contact">
@@ -115,62 +125,146 @@
         </div>
     </section>
 
+    <!-- laboratories section -->
+    <section id="research" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Research Experience</h6>
+            <h6 class="section-title mb-4">Academic Research & Innovation</h6>
+            <p class="mb-5 pb-4">Currently pursuing MTech in Computational and Data Science from IISc Bengaluru, 
+                I am actively engaged in cutting-edge research in Natural Language Processing and Machine Learning.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <img class="company-img" src="assets/imgs/iisc.png">
+                            <h5 class="font-weight-bold"><a href="https://danishpruthi.com/group/" target="_blank" style="text-decoration: none; color: inherit;">Natural Language Processing Lab</a></h5>
+                            <h6 class="text">MTech Research Student</h6>
+                            <p class="text-muted mb-3">December 2024 - <b>Present</b></p>
+                            <div class="text-left">
+                                <p class="mb-2"><strong>Research Focus:</strong> Advanced NLP techniques for multilingual text processing</p>
+                                <!-- <p class="mb-2"><strong>Current Projects:</strong></p>
+                                <ul class="small text-left">
+                                    <li>Developing transformer-based models for low-resource language understanding</li>
+                                    <li>Cross-lingual sentiment analysis using advanced deep learning architectures</li>
+                                    <li>Research on attention mechanisms for improved text classification</li>
+                                </ul> -->
+                                <!-- <p class="mb-2"><strong>Technologies:</strong> PyTorch, Transformers, BERT, GPT, Python, CUDA</p>
+                                <p class="mb-0"><strong>Supervisor:</strong> Leading NLP researchers at CDS, IISc</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Service section -->
     <section id="service" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">Experience</h6>
-            <h6 class="section-title mb-4">Amazing Teams that I have worked with</h6>
-            <p class="mb-5 pb-4">I am currently a pursuing my MTech in CDS (Computational and Data Science) from Indian Institute of Science, Bengaluru.<br> 
-                During my academic career, I have had the opportunity to work with some great teams and contribute to impactful projects.</p>
+            <h6 class="subtitle">Professional Experience</h6>
+            <h6 class="section-title mb-4">Industry Expertise & Achievements</h6>
+            <p class="mb-5 pb-4">With 8+ months of hands-on experience in software development and data science, 
+                I have worked with leading tech companies to deliver innovative solutions.<br> 
+                My experience spans full-stack development, machine learning implementation, and scalable system design.</p>
 
             <div class="row">
-                <!-- <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <img class="company-img" src="assets/imgs/iisc.png">
-                            <h5>NLP Lab, CDS</h5>
-                            <h6>MTech Student</h6>
-                            <p>December 2024 - <b>Current</b></p>
+                <div class="col-lg-6 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <img class="company-img" src="assets/imgs/cred.png">
+                            <h5 class="font-weight-bold"><a href="https://drive.google.com/file/d/1ancj94sX0GwBBg4L93bBtBodR_PYtvjW/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">CRED</a></h5>
+                            <h6 class="text">Data Scientist Intern</h6>
+                            <p class="text-muted mb-3">May 2025 - August 2025</p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>Key Responsibilities:</strong>
+                                Designed a SMS classifier and event extraction service using text embeddings, hierarchial XGBoost classification and NER pipeline, achievening 95% accuracy in classifying SMSs into 20+ categories and extracting relevant financial events from user data. Extracted user's credit lines and related financial events with 85% Recall and 90% Precision across defaults and creation of new credit lines for users with available data, ahead of Bureau report. lending-related decisions. 
+                                </p>
+                                
+                                <p class="mb-2 small"><strong>Technologies:</strong> Python, SQL, Spark, AWS (EC2, Lambda, S3, SQS), Sentence Transformers, Sentence Embeddings and Machine Learning Libraries.</p>
+                                
+                                <p class="mb-2 small"><strong>Impact:</strong> Enabled the prediction of potential borrower risk and accelerated critical lending-related decisions.</p>
+                            </div>
                         </div>
                     </div>
-                </div> -->
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
                             <img class="company-img" src="assets/imgs/amazon.png">
-                            <h5>Amazon</h5>
-                            <h6>Software Development Intern</h6>
-                            <p>January 2024 - June 2024</p>
+                            <h5 class="font-weight-bold"><a href="https://drive.google.com/file/d/1ZJmrImHgSyc8Fv2IQ94spCzpsgDv3CJL/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">Amazon</a></h5>
+                            <h6 class="text">Software Development Intern</h6>
+                            <p class="text-muted mb-3">January 2024 - June 2024</p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>Key Responsibilities:</strong>
+                                Developed a shipping cost allocation tracking tool for the TFS team that collects partial allocations across services and displays in a common interface. This reduced the manual effort in cost component querying by up to 80% and optimised the time required for on-call engineers to detect cost allocation anomalies and trace the root cause of errors by up to 90%. This tool streamlined the process by automating cost tracking across various upstream services and the final allocated cost.
+                                </p>
+                                <p class="mb-2 small"><strong>Tech Stack:</strong> Java, Python, SQL, Spark, AWS (EC2, S3, Lambda, DynamDB, SQS, SNS), REST API and Frontend Frameworks</p>
+
+                                <p class="mb-0 small"><strong>Impact:</strong> Streamlined the process of error debugging across owned services and reduced the time to identify and resolve issues.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
+
+                <div class="col-lg-6 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
                             <img class="company-img" src="assets/imgs/google.png">
-                            <h5>Google</h5>
-                            <h6>Application Engineering Intern</h6>
-                            <p>May 2024 - August 2024</p>
+                            <h5 class="font-weight-bold"><a href="https://drive.google.com/file/d/1p_zonPoTF9aFqavv2AFsoQOKuzxcr61e/view?usp=sharing" target="_blank" style="text-decoration: none; color: inherit;">Google</a></h5>
+                            <h6 class="text">Application Engineering Intern</h6>
+                            <p class="text-muted mb-3">May 2024 - August 2024</p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>Project Highlights:</strong>
+                                Architectured and implemented an end-to-end module that streamlined goal management for automated monitoring of supply chain data, ensuring real-time responsiveness to critical metrics.
+                                </p>
+                                <p class="mb-2 small"><strong>Tech Stack:</strong> Java, Python, REST API, AngularJS, NodeJS.</p>
+                                <p class="mb-0 small"><strong>Impact:</strong> Made goal management easier and faster for the team.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
+
+                <div class="col-lg-6 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
                             <img class="company-img" src="assets/imgs/microsoft.png">
-                            <h5>Microsoft Engage</h5>
-                            <h6>Mentee</h6>
-                            <p>April 2022 - May 2022</p>
+                            <h5 class="font-weight-bold"><a href="https://microsoft.com/" target="_blank" style="text-decoration: none; color: inherit;">Microsoft Engage</a></h5>
+                            <h6 class="text">Program Mentee</h6>
+                            <p class="text-muted mb-3">April 2022 - May 2022</p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>Program Focus:</strong>
+                                    Received intensive mentorship in software engineering best practices from Microsoft engineers. Developed a recommendation engine that implements Content-Based Filtering and Collaborative Filtering using using KNN Clustering and Similarity Searching to learn the fine interactions between users and movies. User Based Model achieved RMSE of 1.5 and demonstrated 50% more efficiency and better recommendations compared to Item Based Model which had RMSE of 2.5.
+                                </p>
+                                <p class="mb-2 small"><strong>Skills Developed:</strong> Python, Streamlit, Similarity Search, KNN Clustering, Machine Learning Libraries.</p>
+                                <p class="mb-0 small"><strong>Outcome:</strong> Successfully completed program with a return offer.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
+            </div>
+
+            <!-- Additional Experience Summary -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="card border-primary">
                         <div class="card-body">
-                            <img class="company-img" src="assets/imgs/inf.png">
-                            <h5>Infinity Foundation</h5>
-                            <h6>Web Developer Intern</h6>
-                            <p>Dec 2021 - March 2022</p>
+                            <h5 class="card-title text-primary">Technical Expertise Summary</h5>
+                            <div class="row text-left">
+                                <div class="col-md-4">
+                                    <h6 class="font-weight-bold">Programming Languages</h6>
+                                    <p class="small">Python, Java, C++, SQL</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="font-weight-bold">Frameworks & Tools</h6>
+                                    <p class="small">TensorFlow, PyTorch, Spark</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="font-weight-bold">Cloud & DevOps</h6>
+                                    <p class="small">AWS, Google Cloud, Docker, Kubernetes, CI/CD</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,67 +272,6 @@
         </div>
     </section>
     <!-- End of Section -->
-
-    <!-- Skills section -->
-    <!-- <section class="section">
-
-        <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">Technical Skills</h6>
-            <p class="mb-5 pb-4">I am currently a first.
-                <br> During this time, I have had the opportunity to work with some great organisations.</p>
-
-            <div class="row text-left">
-                <div class="col-sm-4">
-                    <h4>Programming Languages</h4>
-                    <h6 class="mb-3 mt-3">Python</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                    <h6 class="mb-3">Python</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                    <h6 class="mb-3">C/C++</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                    <h6 class="mb-3">Javascript</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Web Development Frameworks</h4>
-                    <h6 class="mb-3 mt-3">Django</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                    <h6 class="mb-3">Angular + NodeJS</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                    <h6 class="mb-3">ReactJS</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Other Tools</h4>
-                    <h6 class="mb-3 mt-3">SQL</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                    <h6 class="mb-3">Git</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-
-        </div>
-    </section> -->
 
     <section class="section">
 
@@ -256,29 +289,44 @@
             <div class="row text-left">
                 <div class="certifications-container">
                     <h4 class="certifications-title">Coursework</h4>
-                    <ul class="certifications-list">
-                        <li>
-                            <span class="certification-name">BTech CSE</span> <br>
-                            Core CS Courses
-                            <span class="certification-date"> - Data Structures and Algorithms, Object Oriented Programming, Database Management, Operating Systems, Computer Networks and Network Security,
-                                Compiler Design, Automata Theory, Data Communication, Microprocessor Architecture, Machine Learning, Artificial Intelligence
-                            </span> <br>
-                            Electives
-                            <span class="certification-date"> - Cryptography, Cloud Computing, Information Retrieval
-                            </span>
-                        </li>
+                    <ul class="certifications-list" style="list-style-type: none; padding-left: 0;">
                         <li>
                             <span class="certification-name">MTech CDS</span> <br>
-                            <span class="certification-date"> 
+                            <span class="certification-date small"> 
                                 <ul>
                                     <li>DS215 : Introduction to Data Science</li>
                                     <li>DS288 : Numerical Methods</li>
                                     <li>DS261 : Artificial Inteligence for Medical Image Analysis</li>
                                     <li>DS284 : Numerical Linear Algebra</li>
                                     <li>DS221 : Introduction to Scalable Systems</li>
+                                    <li>DS211 : Numerical Optimisation</li>
+                                    <li>DS207 : Natural Language Processing</li>
+                                    <li>E9205 : Machine Learning for Signal Processing</li>
+                                    <li>DS295 : Parallel Programming</li>
                                 </ul>
                             </span>
                         </li>
+                        <li>
+                            <span class="certification-name">BTech CSE</span> <br>
+                            <span class="certification-date small">
+                                <ul>
+                                    <li>UCS04P15, UCS03B08: Data Structures and Algorithms</li>
+                                    <li>UCS07B92, UCS06B28: Machine Learning and Artificial Intelligence</li>
+                                    <li>UCS05B14: Computer Architecture and Organisation</li>
+                                    <li>UCS05B16: Database Management Systems</li>
+                                    <li>UCS06B28: Formal Language and Automata Theory</li>
+                                    <li>UCS05B15: Operating Systems</li>
+                                    <li>UCS04B10: Object Oriented Programming</li>
+                                    <li>UCS07E16: Cloud Computing</li>
+                                    <li>UCS06B29: Compiler Design</li>
+                                    <li>UCS06E07, UCS05E06, UCS06E07: Computer Networks, Cryptography and Network Security</li>
+                                    <li>UCS04B09: Microprocessors and Microcontrollers</li>
+                                    <li>UCS07E17: Information Retrieval</li>
+                                    </ul>
+                            </span> <br>
+
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="certifications-container">
@@ -336,247 +384,8 @@
                 These ventures have been great learning experiences.
                 To explore my work, please visit my <a href="https://github.com/dayitachaudhuri">GitHub profile</a>.
             </p>
-
-            <!-- <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/stego.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>STEGO HOME - Image and Video Steganography Application</h5>
-                                <a href="https://stego-home.onrender.com/"><i class="ti-zoom-in"></i></a>
-                                <a href="https://github.com/dayitachaudhuri/stego-home"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/eshop.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>ESHOP - Full Stack e-Commerce Solution</h5>
-                                <a href="https://eshop-v53h.onrender.com/"><i class="ti-zoom-in"></i></a>
-                                <a href="https://github.com/dayitachaudhuri/eshop"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/recom.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Movie Recommender System</h5>
-                                <a href="https://movie-recommendation-engine.streamlit.app/i class="ti-zoom-in"></i></a>
-                                <a href="https://github.com/dayitachaudhuri/movie-recommendation-engine-streamlit"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/web.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Python Web Scraping Toolkit</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://github.com/dayitachaudhuri/News_Scraper"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/loc.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Live Location Sharing Application</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://github.com/dayitachaudhuri/location-share"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/micromouse.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Micromouse Application</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="https://github.com/dayitachaudhuri/Micromouse"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>               
-                </div>
-            </div>
-        <div class="continued">
-            <a href="https://github.com/dayitachaudhuri">See more</a>
-        </div>
-        </div> -->
     </section>
     <!-- End of portfolio section -->
-
-    <!-- <section id="testmonial" class="section">
-        <div class="container text-center">
-
-            <canvas class="pieChart" id="leetPieChart" width="20" height="20"></canvas>
-            <canvas class="barChart" id="githubBarChart" width="20" height="20"></canvas>
-
-        </div>
-    </section> -->
-
-    <!-- Testmonial Section
-    <section id="testmonial" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Testmonial</h6>
-            <h6 class="section-title mb-4">What People Say About Me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-1.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                                <h1 class="title">Emma Re</h1>
-                                <h1 class="subtitle">Graphic Designer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-2.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                                <h1 class="title">James Bert</h1>
-                                <h1 class="subtitle">Web Designer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-3.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                                <h1 class="title">Michael Abra</h1>
-                                <h1 class="subtitle">Web Developer</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of testmonial section -->
-
-    <!-- Blog Section -->
-    <!-- <section id="blog" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">My Blogs</h6>
-            <h6 class="section-title mb-4">Latest News</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="row text-left">
-                <div class="col-md-4">
-                    <div class="card border mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Designe for Everyone</h5>
-                            <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Layouts</h5>
-                            <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border mb-4">
-                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootstrap Framework</h5>
-                            <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="position-relative section">
-        <div class="container text-center">
-            <h6 class="subtitle">Contact</h6>
-            <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">If you feel that you have something mutually beneficial for us, 
-                please ping me through any of my socials! </p>
-
-            <div class="contact text-left">
-                <div class="form">
-                    <h6 class="subtitle">Available 10 AM to 7 PM IST!</h6>
-                    <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-infos">
-                    <div class="item">
-                        <i class="ti-location-pin"></i>
-                        <div class="">
-                            <h5>Location</h5>
-                            <p> Agartala, Tripura, India - 799001</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-email"></i>
-                        <div class="mb-0">
-                            <h5>Email Address</h5>
-                            <p>dayitachaudhuri.tech@gmail.com</p>
-                        </div>
-                    </div>
-                </div>                  
-            </div>
-        </div>  
-        <div id="map">
-            <iframe src="assets/imgs/map.png"></iframe>
-        </div>      
-    </section> -->
-    <!-- End of Contact Section -->
 
     <!-- Page Footer -->
     <footer class="page-footer">
@@ -608,6 +417,60 @@
     <!-- additional js -->
     <script src="assets/js/steller.js"></script>
     <script src="assets/js/charts.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+        // Dark mode functionality
+        const darkModeBtn = document.getElementById('darkModeBtn');
+        const body = document.body;
+        const logo = document.querySelector('.navbar-brand img');
+        
+        // Function to detect system preference
+        function getSystemPreference() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return 'dark';
+            }
+            return 'light';
+        }
+        
+        // Check for saved theme preference or use system preference as default
+        const currentTheme = localStorage.getItem('theme') || getSystemPreference();
+        body.setAttribute('data-theme', currentTheme);
+        
+        // Function to update logo based on theme
+        function updateLogo() {
+            if (body.getAttribute('data-theme') === 'dark') {
+                logo.src = 'assets/imgs/logo-dark.png';
+            } else {
+                logo.src = 'assets/imgs/logo.png';
+            }
+        }
+        
+        // Initialize logo on page load
+        updateLogo();
+        
+        // Listen for system theme changes (when user hasn't manually set preference)
+        if (window.matchMedia) {
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            mediaQuery.addListener(function(e) {
+                // Only auto-switch if user hasn't manually set a preference
+                if (!localStorage.getItem('theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    body.setAttribute('data-theme', newTheme);
+                    updateLogo();
+                }
+            });
+        }
+        
+        darkModeBtn.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateLogo();
+        });
+    </script>
 
 </body>
 </html>
