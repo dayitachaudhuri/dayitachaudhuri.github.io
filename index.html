@@ -10,7 +10,6 @@
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -22,42 +21,8 @@
         </button>
     </div>
 
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#research">Research Experience</a>
-                    </li>   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Professional Experience</a>
-                    </li>                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://dayitachaudhuri.github.io/papers-blog/">Papers Blog</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>          
-    </nav>
-    <!-- End of page navibation -->
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
 
     <!-- Page Header -->
     <header class="header" id="home">
@@ -70,33 +35,23 @@
                     <a class="social-item" href="https://www.linkedin.com/in/dayita-chaudhuri"><i class="ti-linkedin"></i></a>
                     <a class="social-item" href="https://github.com/dayitachaudhuri"><i class="ti-github"></i></a>
                     <a class="social-item" href="https://twitter.com/doyitach"><i class="ti-twitter"></i></a>
-                    <a class="social-item" href="https://www.facebook.com/dayita.chaudhuri.3"><i class="ti-facebook"></i></a>
-                    <a class="social-item" href="http://instagram.com/doyit_aaaa"><i class="ti-instagram"></i></a>
                 </div>
             </div>              
             <div class="img-holder">
                 <img src="assets/imgs/profilecartoon.png" alt="">
             </div>      
         </div>  
-
-        <!-- Header-widget -->
-        <!-- <div class="widget">
-            <div class="widget-item" id="leetcode-qsns"></div>
-            <div class="widget-item" id="github-repos"></div>
-            <div class="widget-item" id="codechef-stars"></div>
-        </div> -->
     </header>
     <!-- End of Page Header -->
     
     <!-- About section -->
-    <section id="about" class="section mt-3">
+    <section id="about" class="section">
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3">
                     <img src="assets/imgs/profilepic.jpeg" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
-                    <!-- <h6 class="title">Dayita Chaudhuri</h6> -->
                     <p class="subtitle">Hi there! Welcome to my page!</p>
                     <p class = 'small'>
 
@@ -113,12 +68,9 @@
                     <p class = 'small'>
                         If you feel that you have something mutually beneficial for us, 
                         please ping me through any of my socials or drop me a mail at 
-                        <a href="mailto:dayitac@iisc.ac.in">dayitac@iisc.ac.in</a> or <a href="mailto:dayitachaudhuri.tech@gmail.com">dayitachaudhuri.tech@gmail.com</a>.
+                        <a href="mailto:dayitac@iisc.ac.in">dayitac@iisc.ac.in</a>.
                     </p>
                     <div class="buttons pt-3">
-                        <!-- <a href="#contact">
-                            <button class="btn btn-primary rounded">CONTACT ME</button>
-                        </a> -->
                         <a href="https://drive.google.com/file/d/1eTOfwKKEi80MpmeBI6e8kC7pvMAloTdR/view?usp=drive_link">
                             <button class="btn btn-dark rounded">DOWNLOAD RESUME</button>
                         </a>
@@ -128,32 +80,58 @@
         </div>
     </section>
 
-    <!-- laboratories section -->
-    <section id="research" class="section">
+        <!-- Education section -->
+    <section id="education" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">Research Experience</h6>
-            <h6 class="section-title mb-4">Academic Research & Innovation</h6>
-            <p class="mb-5 pb-4">Currently pursuing MTech in Computational and Data Science from IISc Bengaluru, 
-                I am actively engaged in cutting-edge research in Natural Language Processing and Machine Learning.</p>
+            <h6 class="subtitle">Education</h6>
+            <h6 class="section-title mb-4">Academic Background</h6>
+            <p class="mb-5 pb-4">My educational journey has equipped me with a strong foundation in computer science and advanced expertise in data science.</p>
 
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6 mb-4">
+            <div class="row">
+                <!-- MTech -->
+                <div class="col-lg-4 mb-4">
                     <div class="custom-card card border h-100">
                         <div class="card-body p-4">
-                            <img class="company-img" src="assets/imgs/iisc.png">
-                            <h5 class="font-weight-bold"><a href="https://danishpruthi.com/group/" target="_blank" style="text-decoration: none; color: inherit;">Natural Language Processing Lab</a></h5>
-                            <h6 class="text">MTech Research Student</h6>
-                            <p class="text-muted mb-3">December 2024 - <b>Present</b></p>
+                            <img class="company-img" src="assets/imgs/iisc.png" alt="IISc Bangalore">
+                            <h5 class="font-weight-bold">Indian Institute of Science (IISc)</h5>
+                            <h6 class="text">M.Tech. in Computational and Data Science</h6>
+                            <p class="text-muted mb-3">2024 - <b>2026 (Expected)</b></p>
                             <div class="text-left">
-                                <p class="mb-2"><strong>Research Focus:</strong> Advanced NLP techniques for multilingual text processing</p>
-                                <!-- <p class="mb-2"><strong>Current Projects:</strong></p>
-                                <ul class="small text-left">
-                                    <li>Developing transformer-based models for low-resource language understanding</li>
-                                    <li>Cross-lingual sentiment analysis using advanced deep learning architectures</li>
-                                    <li>Research on attention mechanisms for improved text classification</li>
-                                </ul> -->
-                                <!-- <p class="mb-2"><strong>Technologies:</strong> PyTorch, Transformers, BERT, GPT, Python, CUDA</p>
-                                <p class="mb-0"><strong>Supervisor:</strong> Leading NLP researchers at CDS, IISc</p> -->
+                                <p class="mb-2 small"><strong>Specialization:</strong> Natural Language Processing, Machine Learning, Advanced Data Science</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BTech -->
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <img class="company-img" src="assets/imgs/nit-agartala.png" alt="NIT Agartala">
+                            <h5 class="font-weight-bold">National Institute of Technology</h5>
+                            <h6 class="text">B.Tech. in Computer Science and Engineering</h6>
+                            <p class="text-muted mb-3">2020 - <b>2024</b></p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>CGPA:</strong> 9.43/10.0</p>
+                                <p class="mb-2 small"><strong>Focus:</strong> Software Engineering, Data Structures, Algorithms, Database Systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School -->
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3" style="height: 60px; display: flex; align-items: center; justify-content: center;">
+                                <i class="ti-home" style="font-size: 3rem; color: #007bff;"></i>
+                            </div>
+                            <h5 class="font-weight-bold">Higher Secondary Education</h5>
+                            <h6 class="text">Science Stream (PCM with Computer Science)</h6>
+                            <p class="text-muted mb-3">2018 - <b>2020</b></p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>Board:</strong> CBSE</p>
+                                <p class="mb-2 small"><strong>Focus:</strong> Mathematics, Physics, Chemistry, Computer Science</p>
                             </div>
                         </div>
                     </div>
@@ -162,16 +140,29 @@
         </div>
     </section>
 
-    <!-- Service section -->
-    <section id="service" class="section">
+    <!-- Experience section -->
+    <section id="experience" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">Professional Experience</h6>
-            <h6 class="section-title mb-4">Industry Expertise & Achievements</h6>
-            <p class="mb-5 pb-4">With 8+ months of hands-on experience in software development and data science, 
-                I have worked with leading tech companies to deliver innovative solutions.<br> 
-                My experience spans full-stack development, machine learning implementation, and scalable system design.</p>
+            <h6 class="subtitle">Experience</h6>
+            <h6 class="section-title mb-4">Research and Industry Experience</h6>
+            <p class="mb-5 pb-4">With 8+ months of industry experience, I have worked with leading tech companies to deliver innovation in data science, software development and scalable system design.<br> 
 
             <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="custom-card card border h-100">
+                        <div class="card-body p-4">
+                            <img class="company-img" src="assets/imgs/iisc.png">
+                            <h5 class="font-weight-bold"><a href="https://danishpruthi.com/group/" target="_blank" style="text-decoration: none; color: inherit;">Natural Language Processing Lab, IISc Bengaluru</a></h5>
+                            <h6 class="text">MTech Student</h6>
+                            <p class="text-muted mb-3">December 2024 - <b>Present</b></p>
+                            <div class="text-left">
+                                <p class="mb-2 small"><strong>Research Focus:</strong>
+                                Advanced NLP techniques for multilingual text processing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6 mb-4">
                     <div class="custom-card card border h-100">
                         <div class="card-body p-4">
@@ -180,13 +171,9 @@
                             <h6 class="text">Data Scientist Intern</h6>
                             <p class="text-muted mb-3">May 2025 - August 2025</p>
                             <div class="text-left">
-                                <p class="mb-2 small"><strong>Key Responsibilities:</strong>
+                                <p class="mb-2 small"><strong>Key Responsibilities and Impact:</strong>
                                 Designed a SMS classifier and event extraction service using text embeddings, hierarchial XGBoost classification and NER pipeline, achievening 95% accuracy in classifying SMSs into 20+ categories and extracting relevant financial events from user data. Extracted user's credit lines and related financial events with 85% Recall and 90% Precision across defaults and creation of new credit lines for users with available data, ahead of Bureau report. lending-related decisions. 
                                 </p>
-                                
-                                <p class="mb-2 small"><strong>Technologies:</strong> Python, SQL, Spark, AWS (EC2, Lambda, S3, SQS), Sentence Transformers, Sentence Embeddings and Machine Learning Libraries.</p>
-                                
-                                <p class="mb-2 small"><strong>Impact:</strong> Enabled the prediction of potential borrower risk and accelerated critical lending-related decisions.</p>
                             </div>
                         </div>
                     </div>
@@ -200,12 +187,9 @@
                             <h6 class="text">Software Development Intern</h6>
                             <p class="text-muted mb-3">January 2024 - June 2024</p>
                             <div class="text-left">
-                                <p class="mb-2 small"><strong>Key Responsibilities:</strong>
+                                <p class="mb-2 small"><strong>Key Responsibilities and Impact:</strong>
                                 Developed a shipping cost allocation tracking tool for the TFS team that collects partial allocations across services and displays in a common interface. This reduced the manual effort in cost component querying by up to 80% and optimised the time required for on-call engineers to detect cost allocation anomalies and trace the root cause of errors by up to 90%. This tool streamlined the process by automating cost tracking across various upstream services and the final allocated cost.
-                                </p>
-                                <p class="mb-2 small"><strong>Tech Stack:</strong> Java, Python, SQL, Spark, AWS (EC2, S3, Lambda, DynamDB, SQS, SNS), REST API and Frontend Frameworks</p>
-
-                                <p class="mb-0 small"><strong>Impact:</strong> Streamlined the process of error debugging across owned services and reduced the time to identify and resolve issues.</p>
+                                </p>                                
                             </div>
                         </div>
                     </div>
@@ -219,29 +203,9 @@
                             <h6 class="text">Application Engineering Intern</h6>
                             <p class="text-muted mb-3">May 2024 - August 2024</p>
                             <div class="text-left">
-                                <p class="mb-2 small"><strong>Project Highlights:</strong>
+                                <p class="mb-2 small"><strong>Key Responsibilities and Impact:</strong>
                                 Architectured and implemented an end-to-end module that streamlined goal management for automated monitoring of supply chain data, ensuring real-time responsiveness to critical metrics.
                                 </p>
-                                <p class="mb-2 small"><strong>Tech Stack:</strong> Java, Python, REST API, AngularJS, NodeJS.</p>
-                                <p class="mb-0 small"><strong>Impact:</strong> Made goal management easier and faster for the team.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 mb-4">
-                    <div class="custom-card card border h-100">
-                        <div class="card-body p-4">
-                            <img class="company-img" src="assets/imgs/microsoft.png">
-                            <h5 class="font-weight-bold"><a href="https://microsoft.com/" target="_blank" style="text-decoration: none; color: inherit;">Microsoft Engage</a></h5>
-                            <h6 class="text">Program Mentee</h6>
-                            <p class="text-muted mb-3">April 2022 - May 2022</p>
-                            <div class="text-left">
-                                <p class="mb-2 small"><strong>Program Focus:</strong>
-                                    Received intensive mentorship in software engineering best practices from Microsoft engineers. Developed a recommendation engine that implements Content-Based Filtering and Collaborative Filtering using using KNN Clustering and Similarity Searching to learn the fine interactions between users and movies. User Based Model achieved RMSE of 1.5 and demonstrated 50% more efficiency and better recommendations compared to Item Based Model which had RMSE of 2.5.
-                                </p>
-                                <p class="mb-2 small"><strong>Skills Developed:</strong> Python, Streamlit, Similarity Search, KNN Clustering, Machine Learning Libraries.</p>
-                                <p class="mb-0 small"><strong>Outcome:</strong> Successfully completed program with a return offer.</p>
                             </div>
                         </div>
                     </div>
@@ -274,206 +238,14 @@
             </div>
         </div>
     </section>
-    <!-- End of Section -->
 
-    <section class="section">
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
 
-        <div class="container text-center">
-            <h6 class="subtitle">Experience
-                
-            </h6>
-            <h6 class="section-title mb-4">Course Work and Certifications</h6>
-            <p class="mb-5 pb-4">
-                I have gone through a diverse spectrum of educational pursuits, 
-                from comprehensive coursework in the field of computer science and artficial intelligence
-                to certified achievements validating proficiency in the latest technologies and 
-                methodologies. My aim has always been to stay ahead of market trends.</p>
-
-            <div class="row text-left">
-                <div class="certifications-container">
-                    <h4 class="certifications-title">Coursework</h4>
-                    <ul class="certifications-list" style="list-style-type: none; padding-left: 0;">
-                        <li>
-                            <span class="certification-name">MTech CDS</span> <br>
-                            <span class="certification-date small"> 
-                                <ul>
-                                    <li>DS215 : Introduction to Data Science</li>
-                                    <li>DS288 : Numerical Methods</li>
-                                    <li>DS261 : Artificial Inteligence for Medical Image Analysis</li>
-                                    <li>DS284 : Numerical Linear Algebra</li>
-                                    <li>DS221 : Introduction to Scalable Systems</li>
-                                    <li>DS211 : Numerical Optimisation</li>
-                                    <li>DS207 : Natural Language Processing</li>
-                                    <li>E9205 : Machine Learning for Signal Processing</li>
-                                    <li>DS295 : Parallel Programming</li>
-                                </ul>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="certification-name">BTech CSE</span> <br>
-                            <span class="certification-date small">
-                                <ul>
-                                    <li>UCS04P15, UCS03B08: Data Structures and Algorithms</li>
-                                    <li>UCS07B92, UCS06B28: Machine Learning and Artificial Intelligence</li>
-                                    <li>UCS05B14: Computer Architecture and Organisation</li>
-                                    <li>UCS05B16: Database Management Systems</li>
-                                    <li>UCS06B28: Formal Language and Automata Theory</li>
-                                    <li>UCS05B15: Operating Systems</li>
-                                    <li>UCS04B10: Object Oriented Programming</li>
-                                    <li>UCS07E16: Cloud Computing</li>
-                                    <li>UCS06B29: Compiler Design</li>
-                                    <li>UCS06E07, UCS05E06, UCS06E07: Computer Networks, Cryptography and Network Security</li>
-                                    <li>UCS04B09: Microprocessors and Microcontrollers</li>
-                                    <li>UCS07E17: Information Retrieval</li>
-                                    </ul>
-                            </span> <br>
-
-                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="certifications-container">
-                    <h4 class="certifications-title">Certifications</h4>
-                    <ul class="certifications-list">
-                        <li>
-                            <span class="certification-name">Software Engineering Virtual Experience</span> 
-                            - JP Morgan and Chase 
-                            <span class="certification-date">(September 2022)</span>
-                        </li>
-                        <li>
-                            <span class="certification-name">Cybersecurity Essentials</span> 
-                            - Cisco 
-                            <span class="certification-date">(September 2022)</span>
-                        </li>
-                        <li>
-                            <span class="certification-name">Virtual Engineering Programme</span> 
-                            - Goldman Sachs 
-                            <span class="certification-date">(September 2022)</span>
-                        </li>
-                        <li>
-                            <span class="certification-name">Amazon Machine Learning Summer School</span> 
-                            <span class="certification-date">(July 2022)</span>
-                        </li>
-                        <li>
-                            <span class="certification-name">30 Days of Google Cloud</span> 
-                            <span class="certification-date">(October 2021)</span>
-                        </li>
-                        <li>
-                            <span class="certification-name">Web Development Bootcamp</span> 
-                            - Udemy 
-                            <span class="certification-date">(October 2021)</span>
-                        </li>
-                        <li>
-                            <span class="certification-name">NPTEL: Programming, Data Structures and Algorithms in Python</span> 
-                            - IIT Madras 
-                            <span class="certification-date">(September 2021)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
-        </div>
-
-        </div>
-    </section>
-    <!-- End of Skills sections -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Existing Works</h6>
-            <p class="mb-5 pb-4">I have had to fortune of working on a diverse array of projects, 
-                from crafting intelligent machine learning models to creating robust web applications. 
-                These ventures have been great learning experiences.
-                To explore my work, please visit my <a href="https://github.com/dayitachaudhuri">GitHub profile</a>.
-            </p>
-    </section>
-    <!-- End of portfolio section -->
-
-    <!-- Page Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#" target="_blank">Dayita Chaudhuri</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="socials">
-                        <a class="social-item" href="https://www.linkedin.com/in/dayita-chaudhuri"><i class="ti-linkedin"></i></a>
-                        <a class="social-item" href="https://github.com/dayitachaudhuri"><i class="ti-github"></i></a>
-                        <a class="social-item" href="https://twitter.com/doyitach"><i class="ti-twitter"></i></a>
-                        <a class="social-item" href="https://www.facebook.com/dayita.chaudhuri.3"><i class="ti-facebook"></i></a>
-                        <a class="social-item" href="http://instagram.com/doyit_aaaa"><i class="ti-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> 
-    <!-- End of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- additional js -->
-    <script src="assets/js/steller.js"></script>
-    <script src="assets/js/charts.js"></script>
-
-    <!-- Dark Mode Script -->
-    <script>
-        // Dark mode functionality
-        const darkModeBtn = document.getElementById('darkModeBtn');
-        const body = document.body;
-        const logo = document.querySelector('.navbar-brand img');
-        
-        // Function to detect system preference
-        function getSystemPreference() {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                return 'dark';
-            }
-            return 'light';
-        }
-        
-        // Check for saved theme preference or use system preference as default
-        const currentTheme = localStorage.getItem('theme') || getSystemPreference();
-        body.setAttribute('data-theme', currentTheme);
-        
-        // Function to update logo based on theme
-        function updateLogo() {
-            if (body.getAttribute('data-theme') === 'dark') {
-                logo.src = 'assets/imgs/logo-dark.png';
-            } else {
-                logo.src = 'assets/imgs/logo.png';
-            }
-        }
-        
-        // Initialize logo on page load
-        updateLogo();
-        
-        // Listen for system theme changes (when user hasn't manually set preference)
-        if (window.matchMedia) {
-            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            mediaQuery.addListener(function(e) {
-                // Only auto-switch if user hasn't manually set a preference
-                if (!localStorage.getItem('theme')) {
-                    const newTheme = e.matches ? 'dark' : 'light';
-                    body.setAttribute('data-theme', newTheme);
-                    updateLogo();
-                }
-            });
-        }
-        
-        darkModeBtn.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateLogo();
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/darkmode.js"></script>
 
 </body>
 </html>
