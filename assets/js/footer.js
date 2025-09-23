@@ -30,11 +30,8 @@ function loadFooter() {
                                 <a class="social-item" href="https://twitter.com/doyitach" target="_blank" title="Twitter">
                                     <i class="ti-twitter"></i>
                                 </a>
-                                <a class="social-item" href="https://www.facebook.com/dayita.chaudhuri.3" target="_blank" title="Facebook">
-                                    <i class="ti-facebook"></i>
-                                </a>
-                                <a class="social-item" href="http://instagram.com/doyit_aaaa" target="_blank" title="Instagram">
-                                    <i class="ti-instagram"></i>
+                                <a class="social-item" href="mailto:dayitac@iisc.ac.in" target="_blank" title="Email">
+                                    <i class="ti-google"></i>
                                 </a>
                             </div>
                         </div>
