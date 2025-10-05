@@ -27,7 +27,7 @@ function loadNavbar() {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ds200.html" data-page="ds200">
+                            <a class="nav-link" href="https://dayitachaudhuri.github.io/DS200-women-in-lok-sabha-elections-2024/" data-page="ds200">
                                 DS200-Assignment <i class="ti-arrow-top-right ml-1"></i>
                             </a>
                         </li>

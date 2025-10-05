@@ -4,11 +4,6 @@ function loadFooter() {
             <div class="container">
                 <div class="row align-items-center py-4">
                     <div class="col-md-6 col-12 text-center text-md-left mb-3 mb-md-0">
-                        <p class="mb-1">
-                            Copyright 
-                            <script>document.write(new Date().getFullYear())</script> 
-                            &copy; <a href="index.html" class="footer-link">Dayita Chaudhuri</a>
-                        </p>
                         <p class="mb-0">
                             <i class="ti-code mr-1"></i>
                             View the source code 
