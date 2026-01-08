@@ -26,11 +26,6 @@ function loadNavbar() {
                                 Projects <i class="ti-arrow-top-right ml-1"></i>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://dayitachaudhuri.github.io/DS200-women-in-lok-sabha-elections-2024/" data-page="ds200">
-                                DS200-Assignment <i class="ti-arrow-top-right ml-1"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>          
