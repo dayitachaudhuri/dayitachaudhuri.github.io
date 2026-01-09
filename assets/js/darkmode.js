@@ -1,38 +1,67 @@
 function initDarkMode() {
     const darkModeBtn = document.getElementById('darkModeBtn');
+    const themeIcon = document.getElementById('themeIcon');
     const body = document.body;
-    
+
     function getSystemPreference() {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            return 'dark';
-        }
-        return 'light';
+        return window.matchMedia &&
+               window.matchMedia('(prefers-color-scheme: dark)').matches
+               ? 'dark'
+               : 'light';
     }
-    
-    // Check for saved theme preference or use system preference as default
-    const currentTheme = localStorage.getItem('theme') || getSystemPreference();
-    body.setAttribute('data-theme', currentTheme);
-    
-    // Listen for system preference changes
+
+    function updateTheme(theme, persist = false) {
+        body.setAttribute('data-theme', theme);
+        updateLogo();
+
+        if (persist) {
+            localStorage.setItem('theme', theme);
+        }
+
+        updateThemeIcon(theme);
+    }
+
+    function updateThemeIcon(theme) {
+        const icon = document.getElementById('themeIcon');
+        if (!icon) return;
+
+        icon.classList.remove('bulb-on', 'bulb-off', 'flicker');
+        void icon.offsetWidth;
+
+        if (theme === 'light') {
+            icon.classList.add('bulb-on', 'flicker');
+            icon.textContent = '💡';
+        } else {
+            icon.classList.add('bulb-off');
+            icon.textContent = '💡';
+        }
+    }
+
+    // Initial theme
+    const savedTheme = localStorage.getItem('theme');
+    const currentTheme = savedTheme || getSystemPreference();
+    updateTheme(currentTheme);
+
+    // Listen for system preference changes (only if user hasn’t chosen)
     if (window.matchMedia) {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        mediaQuery.addListener(function(e) {
+        mediaQuery.addEventListener('change', (e) => {
             if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                body.setAttribute('data-theme', newTheme);
-                updateLogo();
+                updateTheme(e.matches ? 'dark' : 'light');
             }
         });
     }
-    
-    // Dark mode toggle button event listener
+
+    // Toggle on click
     if (darkModeBtn) {
         darkModeBtn.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateLogo();
+            const newTheme =
+                body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            updateTheme(newTheme, true);
+
+            if (newTheme === 'dark') {
+                console.log('Dark mode enabled. Fewer photons, more focus.');
+            }
         });
     }
 }
